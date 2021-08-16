@@ -5,9 +5,11 @@ class MyForm extends React.Component {
         super(props);
         this.state = { amount: '' };
 }
+
     myChangeHandler = (event) => {
         this.setState({amount: event.target.value});
 }
+
     Count = (cents, coins, amount) => // cents = [], coins = cents.length, amount = value of amount 
 {
     let table = new Array(amount + 1); // make a table with new array > amount + 1 for 0 index on array 
@@ -28,15 +30,19 @@ class MyForm extends React.Component {
         const amount = this.state.amount;
 
         return (
-            <form>
-                <h1>Amount</h1>
-                <p>Enter total amount for change:</p>
-                <input
-                    type='text'
-                    onChange={this.myChangeHandler}
-                />
-                <p>The current cents is 1,2,5,10,20,50 and Euro is 1 and 2. Total Euro is {this.state.amount}</p>
-                <p>There are {this.Count(cents, coins, amount*100)} ways to change coins</p>
+            <form id="form">
+                <h1>Q) how many different ways can change be made for a "Euro"?</h1>
+                <h2>The current cents is 1, 2, 5, 10, 20 and 50 cent, €1 and €2.</h2>
+                <h2> Enter
+                    <input 
+                        id="input"
+                        type="text"
+                        onChange={this.myChangeHandler}
+                        placeholder="5"
+                    /> € 
+                </h2>
+                <h3>Total Euro is € {this.state.amount}</h3>
+                <h3>There are {this.Count(cents, coins, amount*100)} ways!</h3>
             </form>
         );
     }

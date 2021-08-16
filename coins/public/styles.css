@@ -1,0 +1,35 @@
+body {
+    background-image: url('./img/euro.PNG');
+    background-repeat: repeat;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+  }
+h1 {
+  font-size: 30px;
+}
+h2 {
+  color: rgb(179, 240, 219);
+  font-size:25px;
+}
+
+h3 {
+  color: red;
+  font-size: 25px;
+}
+
+#form {
+  background-color: rgb(22, 21, 21);
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#input {
+  background-color: rgb(228, 241, 241);
+  width: 200px;
+  height: 100px;
+  font-size: 100px;
+  margin-left:10px;
+}

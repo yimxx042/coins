@@ -1,7 +1,10 @@
 import ReactDOM from 'react-dom';
-
+import Count from './coins';
+import MyForm from './form';
 
 ReactDOM.render(
-  <h1>Coins</h1>,
-  document.getElementById('root')
+  
+  <MyForm />
+  
+  ,document.getElementById('root')
 );
